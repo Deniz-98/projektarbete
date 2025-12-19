@@ -1,0 +1,36 @@
+.product-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.product-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .product-top {
+        grid-template-columns: 1fr;
+    }
+}
+
+.thumbnails {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.thumbnails img {
+    width: 100%;
+   max-width: 80px;
+   cursor: pointer;
+   opacity: 0.8;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+}
