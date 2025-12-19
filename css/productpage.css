@@ -1,36 +1,52 @@
-.product-top {
+.product-top {                           /* På stora skärmar ska detta vara två kolumner. */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
 }
 
-.product-image img{
+.product-image img{                     /* Bilden skalar nu korrekt på alla skärmar. */
     width: 100%;
     height: auto;
     display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {           /* När skärmen är mindre ska layouten bli en kolumn. */
     .product-top {
         grid-template-columns: 1fr;
     }
 }
 
-.thumbnails {
+.main-image img {                       /* Huvudbilden fyller sin kolumn och skalar korrekt. */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumbnails {                           /* Bilder ligger horisontellt och luft emellan.*/
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
     align-items: center;
 }
 
-.thumbnails img {
-    width: 100%;
+.thumbnails img {                       /*A*/
+   width: 100%;
    max-width: 80px;
    cursor: pointer;
    opacity: 0.8;
 }
 
-.thumbnails img:hover {
-  opacity: 1;
+.thumbnails img:hover {                 /*B*/
+  opacity: 1;                           /*A och B: pointer-muspekare med hover*/
+}
+
+@media (max-width: 768px) {
+  .thumbnails {
+    justify-content: center;
+  }
+
+  .thumbnails img {
+    max-width: 60px;
+  }
 }
