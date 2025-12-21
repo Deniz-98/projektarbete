@@ -43,13 +43,12 @@ body {
 
 .filter-bar button {
     
-    
     border: none;
 
     background-color: #000000;
     color: #ffffff;
     border-radius: 40px;
-    padding: 8px 15px 6px 17px;
+    padding: 12px 15px 10px 17px;
     min-width: 140px;
     font-family: "Overpass", sans-serif;
     letter-spacing: 0.1em;
@@ -57,17 +56,24 @@ body {
     font-size: 0.7em;
 }
 
+#single-filter-button {
+    display: none;
+}
+
+
+
 
 .filter-bar input {
     margin-left: auto;
+    flex-grow: 1;
 
     background-color: #F2F2F2;
 
     border: none;
     margin-right: 0;
     border-radius: 40px;
-    padding: 8px 15px 6px 15px;
-    min-width: 170px;
+    padding: 12px 5px 10px 15px;
+    min-width: 120px;
 
     font-family: "Overpass", sans-serif;
     letter-spacing: 0.1em;
@@ -213,9 +219,6 @@ body {
  }
 
 
-
-
-
  @media screen and (max-width: 1330px) {
 
  .product-gallery {
@@ -230,6 +233,22 @@ body {
     grid-template-columns: repeat(2,1fr);
 }
 
+.filter-bar button {
+    display: none;
+}
+
+#single-filter-button {
+    display: block;
+    flex-grow: 1;
+}
+
+.filter-bar input {
+
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+
  }
 
  @media screen and (max-width: 610px) {
@@ -237,8 +256,6 @@ body {
  .product-gallery {
     grid-template-columns: repeat(1,1fr);
 }
-
-
 
  }
 
