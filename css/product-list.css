@@ -57,42 +57,6 @@ body {
     font-size: 0.7em;
 }
 
-.dropdown {
-    position: relative
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    margin-left: 6%;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-}
-
-/* Links inside dropdown content */
-.dropdown-content a {
-  color: black;
-  padding: 12px 12px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1
-}
-
-/* Show the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change background color of dropdown button on hover */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 
 .filter-bar input {
     margin-left: auto;
@@ -113,8 +77,57 @@ body {
 }
 
 .featured {
-    min-height: 250px;
+    width: 100%;
+    /* min-height: 250px; */
+    height: 300px;
     border: 1px solid red;
+    margin-bottom: 8%;
+    position: relative;
+
+}
+
+.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: block; */
+}
+
+.featured-text {
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+    background-color: #000000;
+    width: 190px;
+    aspect-ratio: 1/1;
+    border-radius: 50%; 
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.featured-text p {
+    margin: 8px;
+}
+
+.center-in-circle {
+    margin-top: 22px;
+}
+
+.featured-text:hover {
+    background-color: #ffffff;
+    color: rgb(184, 11, 11);
+    width: 200px;
 }
 
 .product-gallery {
@@ -131,6 +144,8 @@ body {
     grid-column: 1/-1;
     justify-content: center;
     margin: auto;
+
+
 }
 
 .product-card {
@@ -143,7 +158,6 @@ body {
 
 .product-card:hover {
     
-    min-width: 250px;
 
 }
 
@@ -188,8 +202,7 @@ body {
 } */
 
  .product-image {
-    width: 100%;
-    height: 200px;
+    /* width: 100%; */
 
  }
  .product-image img {
@@ -198,6 +211,10 @@ body {
     object-fit: cover;
     display: block;
  }
+
+
+
+
 
  @media screen and (max-width: 1330px) {
 
@@ -224,3 +241,12 @@ body {
 
 
  }
+
+ /* .link-spanner{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1; 
+} */
