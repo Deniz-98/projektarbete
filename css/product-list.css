@@ -12,8 +12,7 @@
 .list-header {
     margin-top: 60px;
     margin-bottom: 50px;
-    letter-spacing: 0.4em;
-    font-weight: 500;
+  
     color:var(--color-black)
 }
 
@@ -25,13 +24,11 @@
     justify-content: flex-start;
     gap: 2%;
     align-items: center;
-    margin-bottom: 30px;
-
+    margin-bottom: 40px;
 }
 
 .filter-navbar button {
     
-    border: none;
     background-color:var(--color-black);
     color: var(--color-white);
     min-width: 140px;
@@ -40,7 +37,6 @@
 #single-filter-button {
     display: none;
 }
-
 
 
 .filter-navbar input {
@@ -57,12 +53,11 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 0.7em;
-
 }
 
 .featured {
     width: 100%;
-    height: 250px;
+    height: 280px;
     margin-bottom: 8%;
     position: relative;
 }
@@ -78,7 +73,7 @@
     top: 8%;
     left: 8%;
 
-    background-color: #000000;
+    background-color: var(--color-black);
     width: 190px;
     aspect-ratio: 1/1;
     border-radius: 50%; 
@@ -121,19 +116,13 @@
 
 .product-card {
     
-    /* min-width: 200px; */
     min-width: 250px;
-    background-color: #F9F9F9;
+    background-color: var(--color-soft-gray);
     /* border: 1px solid red; */
 }
 
-.product-card:hover {
-    
 
-}
-
-.card-heading {
-
+.card-header {
     font-size: 1.2em;
     font-weight: 430;
     margin-bottom: 0px;
@@ -150,14 +139,14 @@
 }
 
  .card-price {
-    color: #a40606;
+    color: var(--color-red);
     font-size: 0.9em;
     font-weight: 400;
     margin-bottom: 20px;
-
+    font-style: bold;
  }
 
-.product-card button {
+.product-card button { */ to be restyled */
 
     background-color: #F2F2F2;
 
@@ -171,7 +160,6 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 0.7em;
-
 }
 
 .product-card button:hover {
@@ -191,23 +179,13 @@
 .more {
     grid-column: 1/-1;
     justify-content: center;
-    margin: auto;
 }
 
 .more button {
-    font-family: "Overpass", sans-serif;
-    letter-spacing: 0.1em;
-    font-weight: 300;
-    font-size: 0.7em;
-
-    background-color: #000000;
-    color: #ffffff;
-
-    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
     margin-right: 0;
     margin-bottom: 7%;
-    border-radius: 40px;
-    padding: 12px 20px 10px 20px;
 }
 
 
@@ -243,7 +221,6 @@
  .featured {
     display: flex;
     flex-direction: column-reverse;
-
  }
 
 .featured-text {
@@ -253,13 +230,9 @@
     height: 70px;
     border-radius: 0%;
     padding: 10px 0 5px 0;
-    
-
  }
 
  .center-in-circle {
-
-
     margin-top: 0px;
 }
 
@@ -272,12 +245,3 @@
 }
 
  }
-
- /* .link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1; 
-} */

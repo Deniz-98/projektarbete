@@ -29,9 +29,16 @@ body {
 
 .button-rounded {
     border-radius: 40px;
+    border: none;
     padding: 12px 15px 10px 17px;
     font-family: var(--font-sans);
     letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 0.7em;
+}
+
+h2 { /* Main page headings - should they be black or red */
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.4em;
 }
