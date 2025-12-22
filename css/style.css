@@ -1,0 +1,38 @@
+
+/* CSS Variables */
+
+:root {
+
+    --font-sans: "Overpass", sans-serif;
+    --page-container-width: 90%;
+    --page-container-max-width: 1600px;
+
+    --color-red: #C40D2E;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-soft-gray: #F9F9F9;
+    
+
+    /*site-wide styles*/
+}
+
+body {
+    font-family: var(--font-sans);
+}
+
+
+.page-container {
+    width: var(--page-container-width);
+    max-width: var(--page-container-max-width);
+    margin:  auto;
+}
+
+.button-rounded {
+    border-radius: 40px;
+    padding: 12px 15px 10px 17px;
+    font-family: var(--font-sans);
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
