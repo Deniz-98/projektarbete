@@ -3,6 +3,42 @@
     font-family: Arial, sans-serif;
 }
 
+:root {
+
+    --font-sans: "Overpass", sans-serif;
+    --page-container-width: 90%;
+    --page-container-max-width: 1600px;
+
+    --color-red: #C40D2E;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-soft-gray: #F9F9F9;
+    
+
+    /*site-wide styles*/
+}
+
+body {
+    font-family: var(--font-sans);
+}
+
+
+.page-container {
+    width: var(--page-container-width);
+    max-width: var(--page-container-max-width);
+    margin: auto;
+}
+
+.button-rounded {
+    border-radius: 40px;
+    padding: 12px 15px 10px 17px;
+    font-family: var(--font-sans);
+    letter-spacing: 0.1em;
+    font-weight: 300px;
+    font-size: 0.7em;
+}
+
+
 
 main {
     display: grid;
@@ -66,7 +102,7 @@ input {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 70px;
+    height: 60px;
     align-self: center;
     margin-top: 20px;
     border-radius: 0%;
@@ -89,13 +125,14 @@ input {
     align-items: center;
     width: 80%;
     padding: 10px;
+    margin-top: 20px;
     border-bottom: 1px solid #ccc;
     background-color: lightblue;
     border: solid 1px gray;
 }
 
 .top-email-field {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -144,6 +181,14 @@ input {
     font-weight: bold;
 }
 
+input {
+    
+    margin-top: 10px;
+    padding-left: 8px;
+
+
+}
+
 input[type="email"] {
     width: 80%;
     height: 40px;
@@ -164,6 +209,13 @@ input[type="email"]::placeholder {
         grid-template-areas:
             "top top bottom"
             "top top bottom";
+    }
+
+    .button {
+        width: 40%;
+         height: 60px;
+        position: relative;
+        right: 20%;
     }
 }
 
