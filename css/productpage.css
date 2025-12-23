@@ -1,5 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page-container{
     padding: 0 1rem;
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.button-rounded {
+  font-size: 1rem;
+}
+
+.description {
+    background-color: var(--color-soft-gray);
+    padding: 2rem;
+}
+
+h3{
+    color: var(--color-red);
+}
+
+.pil {
+    color: var(--color-black)
 }
 
 .product-top {                           
@@ -17,15 +43,15 @@
 
 .picture img,
 .product-image img{                 
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
     max-width: 100%;
 }
 
 
-.main-image img {                       /* Huvudbilden fyller sin kolumn och skalar korrekt. */
-  width: 100%;
+.main-image img {                     
+  max-width: 90%;
   height: auto;
   display: block;
 }
@@ -39,7 +65,7 @@
 }
 
 .thumbnails img {                       /*A*/
-   width: 100%;
+   width: 90%;
    max-width: 60px;                     /*Mobil*/
    cursor: pointer;
    opacity: 0.8;
@@ -93,12 +119,9 @@
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color: var(--color-soft-gray);
-    color: var(--color-red);
-}
-
-.description {
-    padding: 2rem;
+    background-color: var(--color-red);
+    color: var(--color-black);
+    margin: 2rem auto 2rem;  /* Ändrar size på knappen */
 }
 
 .utrustning {
@@ -128,14 +151,8 @@
   flex-shrink: 0;           /* 🔑 hindrar radbrytning */
 }
 
-
-.pil {
-    color: var(--color-black)
-}
-
-
 .picture {    
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto; 
  }
 
@@ -146,6 +163,4 @@
      }
  }
  
-.button-rounded {
-  font-size: 1rem;
-}
+
