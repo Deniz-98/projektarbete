@@ -1,6 +1,6 @@
-* {
+* { font-style: var;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    
 }
 
 :root {
@@ -49,56 +49,51 @@ main {
         "top"
         "bottom";
     max-width: 90%;
-    min-height: 100vh;
+    
     margin: 0 auto;
     padding: 20px;
-    background-color: blueviolet;
+    
 
 }
 
 section {
     margin-bottom: 20px;
-    background-color: tomato;
-   
-}
-
-.top {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: top;
-    background-color: rgb(54, 204, 24);
+    background-color: var(--color-soft-gray);
+   
+}
 
+.top {
+    
+    grid-area: top;
+    
 }
 
 .bottom {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
+    
     grid-area: bottom;
-    background-color: yellow;
+    
 }
 
 
 div {
 
-    background-color: lightgray;
+    
 }
 
 form {
+    display: flex;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
-}
-
-input {
-    width: 100%;
-    height: 45px;
     
 }
+
+
 
 .button {
 
@@ -109,15 +104,16 @@ input {
     height: 60px;
     margin-top: 20px;
     border-radius: 0%;
-    border: none;
+    border: solid 2px var(--color-white);
     font-size: 20px;
-    color: white;
-    background-color: crimson;
+    color: var(--color-white);
+    background-color: var(--color-red);
 }
 
 .button:hover {
-    background-color: white;
-    color: crimson;
+    background-color: var(--color-soft-gray);
+    color: var(--color-red);
+    border: solid 2px var(--color-red);
     cursor: pointer;
 }
 
@@ -132,21 +128,21 @@ input {
     
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
-    background-color: lightblue;
-    border: solid 1px gray;
+    
+    border: solid 1px rgb(216, 205, 205);
 }
 
 .form-field-group{
     width: 80%;
-    height: auto;
+    height: 90%;
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 20px;
     flex-direction: column;
-    background-color: lightgreen;
+    
     padding-bottom: 20px;
-    border: solid 1px gray;
+    border: solid 1px rgb(216, 205, 205);;
 }
 
 
@@ -156,9 +152,9 @@ input {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
+    
     padding-bottom: 20px;
-    border: solid 1px gray;
+    border: solid 1px rgb(216, 205, 205);;
 }
 
 .checkout-final {
@@ -167,19 +163,20 @@ input {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
+    
     padding: 20px;
-    border: solid 1px gray;
+    border: solid 1px rgb(216, 205, 205);;
 }
 
 .contact, .order-summary, .my-basket {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
     padding: 20px;
     margin-top: 10px;
     font-size: 18px;
-    font-weight: bold;
+    
+    border: solid 1px rgb(216, 205, 205);
     
 }
 
@@ -210,7 +207,10 @@ img {
 input {
     
     margin-top: 14px;
-
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: solid 1px rgb(216, 205, 205);
     
 
 }
@@ -219,24 +219,6 @@ input:focus {
     outline: none;
     outline: 2px solid var(--color-black);
     outline-offset: 1px;
-}
-
-
-
-@media (min-width: 768px) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "top top bottom"
-            "top top bottom";
-    }
-
-    .button {
-        width: 50%;
-        height: 60px;
-        
-        right: 20%;
-    }
 }
 
 a {
@@ -252,12 +234,60 @@ a {
 }
 
 hr {
-    border: none;
-    border-top: 2px solid black;
-    margin: 10px 0;
+    width:100%;
+    color: black;
 }
 
 .red {
     color: var(--color-red);
 }
+
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "top top bottom"
+            "top top bottom";
+    }
+
+    @media screen and (min-width: 1024px) {
+        
+    }
+
+    .button {
+        width: 50%;
+        height: 60px;
+    }
+
+    input {
+    width: 100%;
+    height: 45px;
+    
+}
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "top top bottom"
+            "top top bottom";
+    }
+
+    .button {
+        width: 55%;
+        height: 60px;
+    }
+
+    input {
+    width: 100%;
+    height: 55px;
+
+    font-size: large;
+    
+}
+}
+
+
 
