@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border-radius: 4px;
 
 }
 
@@ -20,7 +21,7 @@
 
 body {
     font-family: var(--font-sans);
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -36,7 +37,7 @@ body {
     padding: 12px 15px 10px 17px;
     font-family: var(--font-sans);
     letter-spacing: 0.1em;
-    font-weight: 300px;
+    font-weight: bold;
     font-size: 0.7em;
 
 }
@@ -50,7 +51,7 @@ main {
     grid-template-areas:
         "top"
         "bottom";
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 
@@ -99,11 +100,12 @@ form {
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-width: 50%;
     height: 60px;
     margin-top: 20px;
-    border-radius: 0%;
     border: solid 1px var(--color-white);
     font-size: 20px;
+    font-weight: bold;
     color: var(--color-white);
     background-color: var(--color-red);
 }
@@ -172,7 +174,6 @@ form {
     width: 100%;
     padding: 20px;
     margin-top: 10px;
-    font-size: 18px;
     border: solid 1px rgb(216, 205, 205);
 
 }
@@ -190,7 +191,6 @@ form {
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    
     margin-top: 10px;
 
 }
@@ -262,6 +262,12 @@ a {
     width: max-content;
 }
 
+.item-box a {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .item-box a:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -278,6 +284,11 @@ hr {
 .red {
     color: var(--color-red);
     font-size: larger;
+}
+
+h1,h2,h3 {
+
+font-family: 'Major Mono Display', monospace;
 }
 
 #cardpay-img {
