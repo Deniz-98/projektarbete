@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-header {
+    background-color: rgb(133, 20, 20);
+    color: #fdfcfc;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.site-header .company-name {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.site-header .company-name::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #fdfcfc;
+    margin: 0.5rem auto 0;
+}
+
+.site-header .main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2;
+    margin-bottom: 1rem;
+}
+
+.site-header .main-menu ul li a {
+    color: #fdfcfc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+.site-footer {
+    background-color: rgb(133, 20, 20);
+    color: #fdfcfc;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9 rem;
+}
+.hero {
+    height: 100vh;
+    background: url("herobild.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.hero h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.timeline-section {
+    background: #fdfcfc;
+    padding: 2rem 0;
+}
+
+
+.timeline-line {
+    height: 4px;
+    width: 100%;
+    background: rgb(133, 20, 20);
+    margin: 2rem 0;
+}
+
+
+.timeline-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.timeline {
+    display: flex;
+}
+
+
+.timeline-item {
+    min-width: 100vw;
+    padding: 4rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: #0c0c0c;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 80%;
+    background: rgb(133, 20, 20);
+    margin-left: 2rem;
+}
+
+.text {
+    width: 40%;
+}
+
+.text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.images img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
