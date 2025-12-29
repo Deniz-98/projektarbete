@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+ /* slideshow med click */
+
+ .slideshow input {
+    display: none;
+ }
+
+.slides img {
+
+    display: none;
+    width: 300px;
+}
+
+#slide1:checked ~ .slides .s1 {
+
+    display: block;
+}
+
+#slide2:checked ~ .slides .s2 {
+
+    display: block;
+}
+
+#slide3:checked ~ .slides .s3 {
+
+    display: block;
+}
+
+#slide4:checked ~ .slides .s4 {
+
+    display: block;
+}
+
+.boka-box {
+
+    display: block; 
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
