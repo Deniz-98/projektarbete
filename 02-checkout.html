@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Step 2</title>
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main>
-       <section class="top">
-         
-        <div class="item-box">
-            <p>✔ EMAIL ADRESS</p><a href="01-checkout.html">Ändra</a> 
-        </div>
+    <div class="page-container">
+        <main>
+            <section class="top">
 
-        <div class="form-field-group">
-            <p class="red">2. PERSONUPPGIFTER</p>
-            <form action="#">
-                <input type="text" id="user-firstname" name="user-firstname" placeholder="Förnamn" required>
-                <input type="text" id="user-lastname" name="user-lastname" placeholder="Efternamn" required>
-                <input type="text" id="user-personalnumber" name="user-personalnumber" placeholder="Personnummer" required>
-                <input type="text" id="user-address" name="user-address" placeholder="Adress" required>
-                <input type="text" id="company" name="company" placeholder="Företag" required>
-                <input type="text" id="user-city" name="user-city" placeholder="Stad" required>
-                <input type="text" id="user-zip" name="user-zip" placeholder="Postnummer" required>
-                <input type="text" id="user-country" name="user-country" placeholder="Land" required>
-                <input type="text" id="user-phone" name="user-phone" placeholder="Telefonnummer" required>
-                <a href="03-checkout.html" class="button">Fortsätt</a>
-                
-            </form>
-        </div>
-
-        <div class="item-box"> <p>3. BETALNING</p> </div>
-
-     
-
-
-       </section>
-
-           
-
-        <section class="bottom">
-
-            <div class="order-summary">
-               <span>ORDERÖVERSIKT</span>
-                <div class="sum-container">
-                     
-                    <span class="text">Subtotal</span> <span class="value">0 SEK</span>  </div>
-                 <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
-                <div class="sum-container">
-                    <span class="text">Total</span> <span class="value">0 SEK</span>
+                <div class="item-box">
+                    <p>✔ E-POSTADRESS</p><a href="01-checkout.html">Ändra</a>
                 </div>
-            </div>
-            <div class="my-basket"><p>Din varukorg är tom</p></div>
-            <hr>
-            <div class="contact">
-                <p>Kontakt: +46 000 00 00 00</p>
-                <p>Öppettider: 10:00 - 18:00</p>
-            </div>
 
-        </section>
-    </main>
-    
+                <div class="form-field-group">
+                    <p class="red">2. PERSONUPPGIFTER</p>
+                    <form action="#">
+                        <label for="user-firstname" class="for-screenreader">Förnamn</label>
+                        <input type="text" id="user-firstname" name="user-firstname" placeholder="Förnamn" required>
+                        <label for="user-lastname" class="for-screenreader">Efternamn</label>
+                        <input type="text" id="user-lastname" name="user-lastname" placeholder="Efternamn" required>
+                        <label for="user-personalnumber" class="for-screenreader">Personnummer</label>
+                        <input type="text" id="user-personalnumber" name="user-personalnumber"
+                            placeholder="Personnummer" required>
+                        <label for="user-address" class="for-screenreader">Adress</label>
+                        <input type="text" id="user-address" name="user-address" placeholder="Adress" required>
+                        <label for="company" class="for-screenreader">Företag</label>
+                        <input type="text" id="company" name="company" placeholder="Företag" required>
+                        <label for="user-city" class="for-screenreader">Stad</label>
+                        <input type="text" id="user-city" name="user-city" placeholder="Stad" required>
+                        <label for="user-zip" class="for-screenreader">Postnummer</label>
+                        <input type="text" id="user-zip" name="user-zip" placeholder="Postnummer" required>
+                        <label for="user-country" class="for-screenreader">Land</label>
+                        <input type="text" id="user-country" name="user-country" placeholder="Land" required>
+                        <label for="user-phone" class="for-screenreader">Telefonnummer</label>
+                        <input type="text" id="user-phone" name="user-phone" placeholder="Telefonnummer" required>
+                        <label for="user-delivery" class="for-screenreader">Önskat leveranssätt</label>
+                        <input type="text" id="user-delivery" name="user-delivery" placeholder="Önskat leveranssätt"
+                            required>
+                        <a href="03-checkout.html" class="button">Fortsätt</a>
+
+                    </form>
+                </div>
+
+                <div class="item-box">
+                    <p>3. BETALNING</p>
+                </div>
+
+
+
+
+            </section>
+
+
+
+            <section class="bottom">
+
+                <div class="order-summary">
+                    <span>ORDERÖVERSIKT</span>
+                    <div class="sum-container">
+
+                        <span class="text">Subtotal</span> <span class="value">0 SEK</span>
+                    </div>
+                    <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
+                    <div class="sum-container">
+                        <span class="text red">Total</span> <span class="value red">0 SEK</span>
+                    </div>
+                </div>
+                <div class="my-basket">
+                    <p>Din varukorg är tom</p> <a href="#">Ändra</a>
+                </div>
+                <hr>
+                <div class="contact">
+                    <span>Kontakt:</span> <span>+46 000 00 00 00</span>
+
+                    <span>Öppettider:</span> <span>10:00 - 18:00</span>
+                </div>
+
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>

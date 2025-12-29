@@ -6,58 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Step 3</title>
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <section class="top">
+    <div class="page-container">
+        <main>
+            <section class="top">
 
-            <div class="item-box">
-                <p>✔ EMAIL ADRESS</p><a href="01-checkout.html">Ändra</a>
-            </div>
-
-            <div class="item-box">
-                <p>✔ PERSONUPPGIFTER</p><a href="02-checkout.html">Ändra</a>
-            </div>
-
-            <div class="form-field-group">
-                <p class="red">3. BETALNING</p>
-                <form action="#">
-                    <input type="text" id="card-name" name="card-name" placeholder="Namn på kortet" required>
-                    <input type="text" id="card-number" name="card-number" placeholder="Kortnummer" required>
-                    <input type="text" id="card-expiry" name="card-expiry" placeholder="Giltig till (MM/ÅÅ)" required>
-                    <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
-                    <img src="img/cardpay.png" id="cardpay-img" alt="secure-payment">
-                    <a href="04-checkout.html" class="button">LÄGG ORDER</a>
-                </form>
-            </div>
-
-        </section>
-
-
-
-        <section class="bottom">
-
-            <div class="order-summary">
-                 <span>ORDERÖVERSIKT</span>
-                <div class="sum-container">
-                     
-                    <span class="text">Subtotal</span> <span class="value">0 SEK</span>  </div>
-                 <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
-                <div class="sum-container">
-                    <span class="text">Total</span> <span class="value">0 SEK</span>
+                <div class="item-box">
+                    <p>✔ E-POSTADRESS</p><a href="01-checkout.html">Ändra</a>
                 </div>
-            </div>
-            <div class="my-basket"><p>Din varukorg är tom</p></div>
-            <hr>
-            <div class="contact">
-                <p>Kontakt: +46 000 00 00 00</p>
-                <p>Öppettider: 10:00 - 18:00</p>
-            </div>
 
-        </section>
-    </main>
+                <div class="item-box">
+                    <p>✔ PERSONUPPGIFTER</p><a href="02-checkout.html">Ändra</a>
+                </div>
 
+                <div class="form-field-group">
+                    <p class="red">3. BETALNING</p>
+                    <form action="#">
+                        <label for="card-name" class="for-screenreader">Namn på kortet</label>
+                        <input type="text" id="card-name" name="card-name" placeholder="Namn på kortet" required>
+                        <label for="card-number" class="for-screenreader">Kortnummer</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Kortnummer" required>
+                        <label for="card-expiry" class="for-screenreader">Giltig till (MM/ÅÅ)</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="Giltig till (MM/ÅÅ)"
+                            required>
+                        <label for="card-cvc" class="for-screenreader">CVC</label>
+                        <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+                        <img src="img/cardpay.png" id="cardpay-img" alt="Logotyper för olika betalkort såsom Visa, Mastercard
+                        och American Express. Säker betalning online.">
+                        <a href="04-checkout.html" class="button">LÄGG ORDER</a>
+                    </form>
+                </div>
+
+            </section>
+
+
+
+            <section class="bottom">
+
+                <div class="order-summary">
+                    <span>ORDERÖVERSIKT</span>
+                    <div class="sum-container">
+
+                        <span class="text">Subtotal</span> <span class="value">0 SEK</span>
+                    </div>
+                    <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
+                    <div class="sum-container">
+                        <span class="text red">Total</span> <span class="value red">0 SEK</span>
+                    </div>
+                </div>
+                <div class="my-basket">
+                    <p>Din varukorg är tom</p> <a href="#">Ändra</a>
+                </div>
+                <hr>
+                <div class="contact">
+                    <span>Kontakt:</span> <span>+46 000 00 00 00</span>
+
+                    <span>Öppettider:</span> <span>10:00 - 18:00</span>
+                </div>
+
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>

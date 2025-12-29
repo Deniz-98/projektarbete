@@ -8,62 +8,66 @@
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <section class="top">
+    <div class="page-container">
+        <main>
+            <section class="top">
 
-            <h1>kassa</h1>
+                <h1>kassa</h1>
 
-            <div class="form-field-group">
-                <form action="#">
-                    <p class="red">1. EMAIL ADRESS</p>
-                    <input type="email" id="user-email" name="user-email" placeholder="Email" required>
-                    <a href="02-checkout.html" class="button">Fortsätt</a>
-                    <p>Email är nödvändig för att lägga en order, ett personligt konto kommer att skapas
-                        automatiskt vid köp.</p>
-                </form>
-            </div>
-            <div class="item-box">
-                <p>2. PERSONUPPGIFTER</p>
-            </div>
-            <div class="item-box">
-                <p>3. BETALNING</p>
-            </div>
-
-
-        </section>
-
-        <section class="bottom">
-
-            
-            <div class="order-summary">
-                <span>ORDERÖVERSIKT</span>
-                <div class="sum-container">
-                     
-                    <span class="text">Subtotal</span> <span class="value">0 SEK</span>  </div>
-                 <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
-                <div class="sum-container">
-                    <span class="text">Total</span> <span class="value">0 SEK</span>
+                <div class="form-field-group">
+                    <form action="#">
+                        <p class="red">1. E-POSTADRESS</p>
+                        <label for="user-email" class="for-screenreader">E-postadress</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="E-postadress" required>
+                        <a href="02-checkout.html" class="button">Fortsätt</a>
+                        <p>E-postadress är nödvändig för att lägga en order, ett personligt konto kommer att skapas
+                            automatiskt vid köp.</p>
+                    </form>
                 </div>
-                
-            </div>
-            <div class="my-basket">
-                <p>Din varukorg är tom</p>
-            </div>
-            <hr>
-            <div class="contact">
-                <p>Kontakt: +46 000 00 00 00</p>
-                <p>Öppettider: 10:00 - 18:00</p>
-            </div>
+                <div class="item-box">
+                    <p>2. PERSONUPPGIFTER</p>
+                </div>
+                <div class="item-box">
+                    <p>3. BETALNING</p>
+                </div>
 
-        </section>
 
-    </main>
+            </section>
 
+            <section class="bottom">
+
+
+                <div class="order-summary">
+                    <span>ORDERÖVERSIKT</span>
+                    <div class="sum-container">
+
+                        <span class="text">Subtotal</span> <span class="value">0 SEK</span>
+                    </div>
+                    <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
+                    <div class="sum-container">
+                        <span class="text red">Total</span> <span class="value red">0 SEK</span>
+                    </div>
+
+                </div>
+                <div class="my-basket">
+                    <p>Din varukorg är tom</p> <a href="#">Ändra</a>
+                </div>
+                <hr>
+                <div class="contact">
+                    <span>Kontakt:</span> <span>+46 000 00 00 00</span>
+
+                    <span>Öppettider:</span> <span>10:00 - 18:00</span>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
 </body>
 
 </html>
