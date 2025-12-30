@@ -12,4 +12,3 @@ filters.forEach(filter => {
         filter.classList.toggle('active');
     });
 });
-
