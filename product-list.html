@@ -10,25 +10,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product-list.css">
+
+    <script src="JS/script.js" defer></script>
+
+
 
 </head>
 <body>
     <div class="page-container">
         <h2 class="list-header">HITTA DIN NÄSTA BIL</h2>
 
-        <section class="filter-navbar">
 
-            <button class="button-rounded">BILMÄRKE &#9661;</button>
-            <button class="button-rounded">MODELL &#9661;</button>
-            <button class="button-rounded">FORDONSTYP &#9661;</button>
-            <button class="button-rounded">PRISINTERVALL &#9661;</button>
+
+
+        <section class="filter-meny">
+
+            <!-- filter1 = bilmärke -->
+            <div class="filter-1"> 
+                <button class="button-rounded">BILMÄRKE <span class="arrow"></span></button>
+
+                <ul class="filter-options">
+                    <li class="filter-option"><input type="checkbox" id="brand-1"><label for="brand-1">MÄRKE 1</label></li>
+                    <li class="filter-option"><input type="checkbox" id="brand-2"><label for="brand-2">MÄRKE 2</label></li>
+                    <li class="filter-option"><input type="checkbox" id="brand-3"><label for="brand-3">MÄRKE 3</label></li>
+                    <li class="filter-option"><input type="checkbox" id="brand-4"><label for="brand-4">MÄRKE 4</label></li>
+                    <li class="filter-option"><input type="checkbox" id="brand-5"><label for="brand-5">MÄRKE 5</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-2">
+                <button class="button-rounded">MODELL <span class="arrow"></span></button>
+                <ul class="filter-options">
+                    <li class="filter-option"><input type="checkbox" id="model-1"><label for="model-1">MODEL 1</label></li>
+                    <li class="filter-option"><input type="checkbox" id="model-2"><label for="model-2">MODEL 2</label></li>
+                    <li class="filter-option"><input type="checkbox" id="model-3"><label for="model-3">MODEL 3</label></li>
+                    <li class="filter-option"><input type="checkbox" id="model-4"><label for="model-4">MODEL 4</label></li>
+                    <li class="filter-option"><input type="checkbox" id="model-5"><label for="model-5">MODEL 5</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-3">
+                <button class="button-rounded">FORDONSTYP <span class="arrow"></span></button>
+                <ul class="filter-options">
+                    <li class="filter-option"><input type="checkbox" id="type-1"><label for="type-1">TYP 1</label></li>
+                    <li class="filter-option"><input type="checkbox" id="type-2"><label for="type-2">TYP 2</label></li>
+                    <li class="filter-option"><input type="checkbox" id="type-3"><label for="type-3">TYP 3</label></li>
+                    <li class="filter-option"><input type="checkbox" id="type-4"><label for="type-4">TYP 4</label></li>
+                    <li class="filter-option"><input type="checkbox" id="type-5"><label for="type-5">TYP 5</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-4">
+                <button class="button-rounded">PRISINTERVALL <span class="arrow"></span></button>
+                <ul class="filter-options">
+                    <li class="filter-option"><input type="checkbox" id="price-1"><label for="price-1">0-100k</label></li>
+                    <li class="filter-option"><input type="checkbox" id="price-2"><label for="price-2">100k-200k</label></li>
+                    <li class="filter-option"><input type="checkbox" id="price-3"><label for="price-3">200k-300k</label></li>
+                    <li class="filter-option"><input type="checkbox" id="price-4"><label for="price-4">300k-400k</label></li>
+                    <li class="filter-option"><input type="checkbox" id="price-5"><label for="price-5">400k+</label></li>
+                </ul>
+            </div>
             <button id="single-filter-button" class="button-rounded">ALLA FILTER &#9661;</button>
-            <input type="text" placeholder="SÖK: MÄRKE, MODELL, MM">
+            <input class="search-field" type="text" placeholder="SÖK: MÄRKE, MODELL, MM">
             
         </section>
+
 
         <section class="featured">
            <img src="img/featured.webp" alt="">
@@ -38,13 +86,8 @@
             <p> &#9654;  &#9654;  &#9654;</p>
 
             </div>
-            
-            <!-- trick to make entire section into a link -->
-            <!-- <a href="https://www.google.com">
-                <span class="link-spanner"></span> -->
 
            </div>
-
 
 
         </section>
