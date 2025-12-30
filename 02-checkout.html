@@ -35,7 +35,7 @@
 
                 <div class="form-field-group">
                     <p class="red">2. PERSONUPPGIFTER</p>
-                    <form action="#">
+                    <form action="03-checkout.html" method="get">
                         <label for="user-firstname" class="for-screenreader">Förnamn</label>
                         <input type="text" id="user-firstname" name="user-firstname" placeholder="Förnamn" required>
                         <label for="user-lastname" class="for-screenreader">Efternamn</label>
@@ -56,9 +56,13 @@
                         <label for="user-phone" class="for-screenreader">Telefonnummer</label>
                         <input type="text" id="user-phone" name="user-phone" placeholder="Telefonnummer" required>
                         <label for="user-delivery" class="for-screenreader">Önskat leveranssätt</label>
-                        <input type="text" id="user-delivery" name="user-delivery" placeholder="Önskat leveranssätt"
-                            required>
-                        <a href="03-checkout.html" class="button">Fortsätt</a>
+                        <select id="user-delivery" name="user-delivery" required>
+                            <option value="">Välj leveranssätt</option>
+                            <option value="pickup">Hämta på firma</option>
+                            <option value="delivery">Leverans av fordon (Extra kostnad)</option>
+                            <option value="helicopter">Helikopterupphämtning (Extra kostnad)</option> 
+                        </select>
+                        <button type="submit" class="red-button">Fortsätt</button>
 
                     </form>
                 </div>
