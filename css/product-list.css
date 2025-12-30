@@ -285,7 +285,7 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-.filter-meny button {
+.filter-meny > div {
     display: none;
 }
 
