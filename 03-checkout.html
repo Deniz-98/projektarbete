@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Step 3</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="company-name">lux</h1>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="homepage.html">Main page</a></li>
+                    <li><a href="product-list.html">Produkt lista</a></li>
+                    <li><a href="OmOss.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page-container">
+
+        <h1 class="checkout-header">kassa</h1>
+
+        <main>
+            <section class="top">
+
+                <div class="item-box">
+                    <h2>✔ e-postadress</h2><a href="01-checkout.html">Ändra</a>
+                </div>
+
+                <div class="item-box">
+                    <h2>✔ personuppgifter</h2><a href="02-checkout.html">Ändra</a>
+                </div>
+
+                <div class="form-field-group">
+                    <h2 class="red">3. betalning</h2>
+                    <form action="04-checkout.html" method="get">
+                        <label for="card-name" class="for-screenreader">Namn på kortet</label>
+                        <input type="text" id="card-name" name="card-name" placeholder="Namn på kortet" required>
+                        <label for="card-number" class="for-screenreader">Kortnummer</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Kortnummer" required>
+                        <label for="card-expiry" class="for-screenreader">Giltig till (MM/ÅÅ)</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="Giltig till (MM/ÅÅ)"
+                            required>
+                        <label for="card-cvc" class="for-screenreader">CVC</label>
+                        <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+                        <img src="img/cardpay.png" id="cardpay-img" alt="Logotyper för olika betalkort såsom Visa, Mastercard
+                        och American Express. Säker betalning online.">
+                        <button type="submit" class="red-button">LÄGG ORDER</button>
+                    </form>
+                </div>
+
+            </section>
+
+
+
+            <section class="bottom">
+
+                <aside class="order-summary">
+                    <h2>orderöversikt</h2>
+                    <div class="sum-container">
+
+                        <span class="text">Subtotal</span> <span class="value">0 SEK</span>
+                    </div>
+                    <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
+                    <div class="sum-container">
+                        <span class="text red">Total</span> <span class="value red">0 SEK</span>
+                    </div>
+                </aside>
+
+                <div class="my-basket">
+                    <p>Din varukorg är tom</p> <a href="#">Ändra</a>
+                </div>
+                <hr>
+                <div class="contact">
+                    <span>Kontakt:</span> <span>+46 000 00 00 00</span>
+
+                    <span>Öppettider:</span> <span>10:00 - 18:00</span>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <p>2025 LUX. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+
+</html>
