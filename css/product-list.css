@@ -11,12 +11,16 @@
     margin-top: 60px;
     margin-bottom: 50px;
   
-    color:var(--color-black)
+    color:var(--color-black);
+
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.4em;
 }
 
-/* styling of filter navbar */
+/* styling of filter meny */
 
-.filter-navbar {
+.filter-meny {
 
     display: flex;
     justify-content: flex-start;
@@ -25,11 +29,12 @@
     margin-bottom: 40px;
 }
 
-.filter-navbar button {
+.filter-meny button {
     
     background-color:var(--color-black);
     color: var(--color-white);
     min-width: 140px;
+    border: none;
 }
 
 #single-filter-button {
@@ -37,7 +42,7 @@
 }
 
 
-.filter-navbar input {
+.search-field {
     margin-left: auto;
     flex-grow: 1;
 
@@ -52,6 +57,84 @@
     font-weight: 300;
     font-size: 0.7em;
 }
+
+
+
+/* styling for filter-dropdown menu */
+
+
+.filter-options {
+
+    list-style-type: none;
+    padding : 0px;
+    top: 190px;
+
+    min-width: parent-width;
+
+    display: none;
+
+    position: absolute;
+    background-color: var(--color-white);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+    margin-top: 5px;
+
+    letter-spacing: 0.1em;
+    font-weight: 300px;
+    font-size: 0.7em;
+}
+
+.filter-meny > div.active .filter-options {
+    display: block;
+}
+
+.filter-option {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  width: 130px;
+  padding-left: 10px;
+  border-radius: 6px;
+  min-width: parent-width;
+  align-items: center;
+  background: #fff;
+}
+
+
+.filter-option:hover {
+    background-color: #F2F2F2;
+}
+
+/* adds and styles arrow after text on filter-meny buttons */
+
+.filter-meny > div button .arrow {
+    margin-left: 5px;
+    display: inline-block;
+    transform: translateY(1px);
+    transition: 0.3s; /* smooths rotation */
+    
+
+}
+
+.filter-meny > div button .arrow::after {
+    content: "\25BD"; /* adds a hollow downward triangle */
+    color: white;
+}
+
+/* makes the arrow rotate upside down when meny is open (active class) */
+.filter-meny > div.active button .arrow {
+    transform: rotate(180deg) translateY(2px);
+
+}
+
+
+
+
+
+
+/* styling of featured area */
+
 
 .featured {
     width: 100%;
@@ -86,7 +169,8 @@
     letter-spacing: 0.1em;
     font-weight: 700;
     font-size: 1em;
-    color: var(--color-white)
+    color: var(--color-white);
+    transition: background-color, color 1000ms;
 }
 
 .featured-text p {
@@ -102,6 +186,9 @@
     color: var(--color-red);
 }
 
+
+/* styling of product gallery */
+
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -116,7 +203,6 @@
     
     min-width: 250px;
     background-color: var(--color-soft-gray);
-    /* border: 1px solid red; */
 }
 
 
@@ -144,10 +230,10 @@
     font-style: bold;
  }
 
-.product-card button { */ to be restyled */
+ /* to be restyled */
+.product-card button { 
 
-    background-color: #F2F2F2;
-
+    visibility: hidden;
     border: none;
     margin-right: 0;
     margin-bottom: 7%;
@@ -158,6 +244,7 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 0.7em;
+    transition: background-color 0.3s, color 0.3s,;
 }
 
 .product-card button:hover {
@@ -166,12 +253,34 @@
     color: #ffffff;
 }
 
+ .product-image {
+    overflow: hidden; /* ensures that zoomed image does not overflow outside of the card */
+ }
+
  .product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+
+
+    transition: transform 0.5s ease; /* adds smooth zoom effect */
  }
+
+
+/* styling of product gallery when mouse is over a card */
+
+.product-card:hover .product-image img {
+    transform: scale(1.2);
+}
+
+.product-card:hover button {
+    visibility: visible;
+}
+
+
+
+
 
 
 .more {
@@ -184,6 +293,7 @@
     color: var(--color-white);
     margin-right: 0;
     margin-bottom: 7%;
+    border: none;
 }
 
 
@@ -201,7 +311,7 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-.filter-navbar button {
+.filter-meny > div {
     display: none;
 }
 
@@ -210,7 +320,7 @@
     flex-grow: 1;
 }
 
-.filter-navbar input {
+.filter-meny input {
     text-align: center;
     padding-right: 0px;
     padding-left: 0px;
