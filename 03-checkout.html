@@ -13,32 +13,35 @@
 </head>
 
 <body>
-     <header class="site-header">
-    <div class="header-content">
-        <h1 class="company-name">lux</h1>
-        <nav class="main-menu">
-            <ul>
-               <li><a href="homepage.html">Main page</a></li>
-                <li><a href="product-list.html">Produkt lista</a></li>
-                <li><a href="OmOss.html">Om oss</a></li>
-            </ul>
-        </nav>
-    </div>
- </header>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="company-name">lux</h1>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="homepage.html">Main page</a></li>
+                    <li><a href="product-list.html">Produkt lista</a></li>
+                    <li><a href="OmOss.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="page-container">
+
+        <h1 class="checkout-header">kassa</h1>
+
         <main>
             <section class="top">
 
                 <div class="item-box">
-                    <p>✔ E-POSTADRESS</p><a href="01-checkout.html">Ändra</a>
+                    <h2>✔ e-postadress</h2><a href="01-checkout.html">Ändra</a>
                 </div>
 
                 <div class="item-box">
-                    <p>✔ PERSONUPPGIFTER</p><a href="02-checkout.html">Ändra</a>
+                    <h2>✔ personuppgifter</h2><a href="02-checkout.html">Ändra</a>
                 </div>
 
                 <div class="form-field-group">
-                    <p class="red">3. BETALNING</p>
+                    <h2 class="red">3. betalning</h2>
                     <form action="04-checkout.html" method="get">
                         <label for="card-name" class="for-screenreader">Namn på kortet</label>
                         <input type="text" id="card-name" name="card-name" placeholder="Namn på kortet" required>
@@ -61,8 +64,8 @@
 
             <section class="bottom">
 
-                <div class="order-summary">
-                    <span>ORDERÖVERSIKT</span>
+                <aside class="order-summary">
+                    <h2>orderöversikt</h2>
                     <div class="sum-container">
 
                         <span class="text">Subtotal</span> <span class="value">0 SEK</span>
@@ -71,7 +74,8 @@
                     <div class="sum-container">
                         <span class="text red">Total</span> <span class="value red">0 SEK</span>
                     </div>
-                </div>
+                </aside>
+
                 <div class="my-basket">
                     <p>Din varukorg är tom</p> <a href="#">Ändra</a>
                 </div>
