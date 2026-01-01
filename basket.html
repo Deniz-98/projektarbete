@@ -27,26 +27,15 @@
     </header>
     <div class="page-container">
 
-        <h1 class="checkout-header">kassa</h1>
+        <h1 class="checkout-header">varukorg</h1>
 
         <main>
             <section class="top">
 
-                <div class="form-field-group">
-                    <form action="02-checkout.html" method="get">
-                        <h2 class="red">1. e-postadress</h2>
-                        <label for="user-email" class="for-screenreader">E-postadress</label>
-                        <input type="email" id="user-email" name="user-email" placeholder="E-postadress" required>
-                        <button type="submit" class="red-button">Fortsätt</button>
-                        <p>E-postadress är nödvändig för att lägga en order, ett personligt konto kommer att skapas
-                            automatiskt vid köp.</p>
-                    </form>
-                </div>
-                <div class="item-box">
-                    <h2>2. personuppgifter</h2>
-                </div>
-                <div class="item-box">
-                    <h2>3. betalning</h2>
+                <div class="my-basket-border">
+                    <h2>varukorg (tom)</h2>
+                    <p>Du har inga produkter i din varukorg.</p>
+                    <a href="product-list.html">Till produkter</a>
                 </div>
 
             </section>
@@ -62,12 +51,13 @@
                     <div class="sum-container"> <span class="text">Frakt</span> <span class="value">0 SEK</span> </div>
                     <div class="sum-container">
                         <span class="text red">Total</span> <span class="value red">0 SEK</span>
-                    </div>
+                        
+                    </div> 
 
                 </aside>
-                <div class="my-basket">
-                    <p>Din varukorg är tom</p> <a href="basket.html">Ändra</a>
-                </div>
+
+                <a href="01-checkout.html" class="red-button basket-button">Till betalning</a>
+              
                 <hr>
                 <div class="contact">
                     <span>Kontakt:</span> <span>+46 000 00 00 00</span>
