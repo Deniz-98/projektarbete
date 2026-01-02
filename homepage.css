@@ -1,41 +1,225 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+.hero {
+    height: 100vh;
+    margin-bottom: 30vh;
+    
+}
+
+.site-header {
+    background-color: rgb(133, 20, 20);
+    color: #fdfcfc;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.site-header .company-name {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.site-header .company-name::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #fdfcfc;
+    margin: 0.5rem auto 0;
+}
+
+.site-header .main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2;
+    margin-bottom: 1rem;
+}
+
+.site-header .main-menu ul li a {
+    color: #fdfcfc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+.site-footer {
+    background-color: rgb(133, 20, 20);
+    color: #fdfcfc;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9 rem;
+}
+
+
+
+.section-title {
+    
+    letter-spacing: 0.15rem;
+    text-align: center;
+    padding: 50px;
+   
+}
+
+.section-title2 {
+    
+    letter-spacing: 0.15rem;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+.title-lines {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    color: rgb(122, 35, 35);
+    position: relative;
+}
+
+.title-lines::before,
+.title-lines::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(122, 35, 35);
+    margin: 20px auto;
+}
+
+.title-lines::before {
+    margin-bottom: 16px;
+}
+
+.title-lines::after {
+    margin-top: 16px;
+}
+
+
+
+/*video till mainpage */
+
+.video-main {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow:hidden
+}
+
+.video-main video {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.content {
+
+    position: relative;
+    color: white;
+    padding: 100px;
+}
+
+.products {
+    position: relative;
+    z-index: 1;
+    padding: 12px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.product-card {
+    background: white;
+    color: black;
+}
+
+.image {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.info {
+    padding: 14px;
+}
+
+.info h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 1rem;
+    opacity: 0.50;
+}
 
 
 
 
 
+.spacer 
+{
 
-
-
-
-
-
+    height: 200vh;
+}
  /* slideshow med click */
+
+ .slideshow {
+    position: relative;
+    max-width: 900px;
+    margin: 80px auto;
+ }
 
  .slideshow input {
     display: none;
  }
 
-.slides img {
+.slide {
 
     display: none;
-    width: 300px;
+    width: 100%;
+    
 }
 
-#slide1:checked ~ .slides .s1 {
-
-    display: block;
+.slides {
+    position: relative;
 }
 
-#slide2:checked ~ .slides .s2 {
-
-    display: block;
-}
-
-#slide3:checked ~ .slides .s3 {
-
-    display: block;
-}
-
+#slide1:checked ~ .slides .s1,
+#slide2:checked ~ .slides .s2,
+#slide3:checked ~ .slides .s3,
 #slide4:checked ~ .slides .s4 {
 
     display: block;
@@ -56,3 +240,53 @@
     border-radius: 5px;
 }
 
+/* Bilder */
+
+
+#slide1:checked ~ .slides .s1,
+#slide2:checked ~ .slides .s2,
+#slide3:checked ~ .slides .s3,
+#slide4:checked ~ .slides .s4 {
+  display: block;
+}
+
+/* PILAR */
+.arrows label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  display: none;
+}
+
+.arrows label:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: -50px;
+}
+
+.next {
+  right: -50px;
+}
+
+/* Visa rätt pilar beroende på slide */
+
+#slide1:checked ~ .arrows .s1,
+#slide2:checked ~ .arrows .s2,
+#slide3:checked ~ .arrows .s3,
+#slide4:checked ~ .arrows .s4 {
+  display: block;
+}
+
+.info-text {
+    
+    letter-spacing: 0.15rem;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
