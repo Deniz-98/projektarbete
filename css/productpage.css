@@ -113,8 +113,8 @@ main {
     border-radius: 999px;
     padding: 0.5rem 0.8rem;
     font-size: 1rem;
-    background-color: var(--color-black);
-    color: var(--color-soft-gray);
+    background-color: var(--color-soft-gray);
+    color: var(--color-red);
     width: fit-content;  
 }
 
@@ -175,6 +175,7 @@ main {
 
 button:hover { 
     background-color: var(--color-red);
+    color: var(--color-white);
     font-size: 1rem;
  }
 
@@ -194,7 +195,20 @@ button:hover {
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+.footer-col2 {
+    font-size: 0.7rem;
+    align-items: end;
+    padding-top: 1rem;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+}
+
+.footer-col h2 {
+    font-size: 1.3rem;
+}
