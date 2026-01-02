@@ -15,7 +15,7 @@
 
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
 }
 
 /* styling of filter meny */
@@ -267,6 +267,14 @@
     transition: transform 0.5s ease; /* adds smooth zoom effect */
  }
 
+
+ .product-card button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transform: translateY(5px);
+ 
+ }
 
 /* styling of product gallery when mouse is over a card */
 
