@@ -33,6 +33,8 @@ border-radius: 0%;
 
 }
 
+
+
 .page-container {
 
     width: var(--page-container-width);
@@ -405,7 +407,7 @@ h2 {
 
 @media (min-width: 768px) {
 
-    body {
+    .page-container {
         font-size: 18px;
     }
 
@@ -468,7 +470,7 @@ h2 {
         font-size: 22px;
     }
 
-    body {
+    main {
 
         font-size: 24px;
     }
@@ -496,4 +498,16 @@ h2 {
         padding-right: 30px;
     }
 
+}
+
+.site-header {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 20px 0 25px !important;
+   
+}
+
+header {
+    padding-top: 0 !important;
+    font-size: 16px;
 }
