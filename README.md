@@ -43,3 +43,15 @@ Webbplatsens design ska upplevas som luftig och avskalad, där varje element har
   https://wireframe.cc/pro/ppp/9208276b9-997156#b01af090-507c-4e7a-a246-06927e03bffd
 - Hanna: https://wireframe.cc/pro/ppp/d273a1112-997237
 - Robert: https://wireframe.cc/pro/ppp/75cd9ec30-996912
+
+## Sprint journal 1 - 22-28/12
+Vi borde lagt mer gemensam tid i början, Vi valde att snabbt dela upp arbetet och pratade igenom hur respektive del skulle se ut. Med facit i hand hade vi nog sparat tid på att istället startat med att göra header och footer gemensamt, mm.
+ 
+Vi har haft vissa svårigheter med att mötas under sprintperioderna då alla vart upptagna på olika håll såhär i jultider.
+ 
+Vi är alla ovana med den här typen av projektering så vi underskattade hur mycket kommunikation som krävs.
+ 
+Vad kan vi göra annorlunda i nästa sprint: Tätare kommunikation.
+
+## Sprint journal 2 - 29/12-4/1
+I sprint 2 har vi haft bättre kommuniktation i gruppen och kunnat ha tätare möten. Vi har fördelat tiden bra. Vi känner också att vi fått bättre koll på GitHub och samt projketet. Det som har fungerat bäst är hur vi lärt oss tillsammans. Hur arbetsättet med Trello hjälper vårt arbete och att se hur mycket nya kunskaper vi tar med oss av den här uppgiften. 
