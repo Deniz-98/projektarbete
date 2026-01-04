@@ -48,6 +48,7 @@ main {
   height: auto;
   margin: 0 auto;
   display: block;
+  padding-top: 2rem;
 }
 
 .thumbnails {                           /* Bilder ligger horisontellt och luft emellan.*/
