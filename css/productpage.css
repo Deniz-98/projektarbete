@@ -59,7 +59,7 @@ main {
 }
 
 .thumbnails img {                       /*A*/
-   width: 100%;
+   width: 90%;
    max-width: 60px;                     /*Mobil*/
    cursor: pointer;
    opacity: 0.8;
