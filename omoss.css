@@ -1,3 +1,12 @@
+:root {
+    --font-sans: "Overpass", sans-serif;
+
+    --color-red: rgb(188, 36, 36);
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-soft-gray: #F9F9F9;
+}
+
 
 * {
     margin: 0;
@@ -5,54 +14,92 @@
     box-sizing: border-box;
 }
 
-.site-header {
-    background-color: rgb(133, 20, 20);
-    color: #fdfcfc;
-    text-align: center;
-    padding: 1rem 0;
+body {
+    font-family: var(--font-sans);
 }
 
-.site-header .company-name {
+.site-header {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    text-align: center;
+    height: 150px;
+    position: relative;
+}
+
+header svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    fill: white;
+    cursor: pointer;
+}
+
+.company-name {
     font-size: 2.7rem;
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
 }
 
-.site-header .company-name::after {
+.company-name::after {
     content: "";
     display: block;
     height: 2px;
     width: 50%;
-    background-color: #fdfcfc;
+    background-color: white;
     margin: 0.5rem auto 0;
 }
 
-.site-header .main-menu ul {
+.main-menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 2;
-    margin-bottom: 1rem;
 }
 
-.site-header .main-menu ul li a {
-    color: #fdfcfc;
+.main-menu a {
+    color: white;
     text-decoration: none;
-    font-weight: 500;
     font-size: 1.2rem;
 }
 
-
-
-.site-footer {
-    background-color: rgb(133, 20, 20);
-    color: #fdfcfc;
+.footer {
+    background-color: var(--color-red);
+    color: white;
     text-align: center;
     padding: 1.5rem 0;
-    font-size: 0.9 rem;
 }
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.footer-col h2 {
+    font-size: 1.3rem;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+}
+
+.footer-col2 {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+}
+
+
+
+
 .hero {
     height: 100vh;
     background: url("herobild.jpg") center/cover no-repeat;
@@ -132,3 +179,5 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+
