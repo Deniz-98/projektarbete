@@ -33,6 +33,7 @@ border-radius: 0%;
 
 }
 
+
 .page-container {
 
     width: var(--page-container-width);
@@ -49,62 +50,6 @@ border-radius: 0%;
     font-weight: bold;
     font-size: 0.7em;
 
-}
-
-.site-header {
-
-    background-color: rgb(133, 20, 20);
-    color: #fdfcfc;
-    text-align: center;
-    padding: 1rem 0;
-
-
-}
-
-.site-header .company-name {
-
-    font-size: 2.7rem;
-    margin-bottom: 2rem;
-    position: relative;
-    display: inline-block;
-}
-
-.site-header .company-name::after {
-
-    content: "";
-    display: block;
-    height: 2px;
-    width: 50%;
-    background-color: #fdfcfc;
-    margin: 0.5rem auto 0;
-}
-
-.site-header .main-menu ul {
-
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0;
-    margin-bottom: 1rem;
-}
-
-.site-header .main-menu ul li a {
-
-    display: block;
-    color: #fdfcfc;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-.site-footer {
-
-    background-color: rgb(133, 20, 20);
-    color: #fdfcfc;
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 0.9 rem;
 }
 
 main {
@@ -382,12 +327,6 @@ hr {
     color: var(--color-red);
 }
 
-h1,
-h2,
-h3 {
-
-    font-family: 'Major Mono Display', monospace;
-}
 
 h1 {
 
@@ -467,7 +406,7 @@ h2 {
 
 @media (min-width: 768px) {
 
-    body {
+    .page-container {
         font-size: 18px;
     }
 
@@ -530,7 +469,7 @@ h2 {
         font-size: 22px;
     }
 
-    body {
+    main {
 
         font-size: 24px;
     }
@@ -558,4 +497,16 @@ h2 {
         padding-right: 30px;
     }
 
+}
+
+.site-header {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 15px 0 10px !important;
+   
+}
+
+header {
+    padding-top: 0 !important;
+    font-size: 16px;
 }
