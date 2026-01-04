@@ -4,8 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- kopplat till CSS -->
+    <link rel="stylesheet" href="homepage.css">
+
 </head>
+
 <body>
+    <!-- Header -->
+    <header class="site-header">
+    <div class="header-content">
+        <h1 class="company-name">LUX</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#Mainpage">Main page</a></li>
+                <li><a href="#Produkt-lista">Produkt lista</a></li>
+                <li><a href="#Om oss">Om oss</a></li>
+            </ul>
+        </nav>
+    </div>
+ </header>
     
+    <!-- Video till homepage--> 
+
+    <!-- Reklam -->
+<div class="hero-badge">
+    <span>Låg ränta vid kreditköp</span>
+</div>
+
+
+<section class="hero">
+
+<div class="hero-badge">
+    <span>Låg ränta vid kreditköp!</span>
+</div>
+  <div class="background-video">
+
+    <video autoplay muted loop playsinline>
+
+        <source src="mainpage-videoochbild/mainpage-video.mp4"type="video/mp4"> 
+    
+    </video>
+</div>
+</section>
+
+<!-- produkttitel-->
+
+<section class="section-title">
+<h1 class="title-lines">Våra bilar</h1>
+</section>
+
+
+
+<!-- Bilder till container dvs boxarna vi säljer bilar-->
+
+<section class="products">
+
+<div class="container">
+
+    <div class="product-card">
+        <div class="image">
+            <img src="mainpage-videoochbild/mainpage-ferrari.png" alt="Ferrai">
+        </div>
+<div class="info">
+    <h3>Ferrari Roma</h3>
+    <p class="price">2 495 000kr</p>
+</div>
+    </div>
+
+<div class="product-card">
+        <div class="image">
+            <img src="mainpage-videoochbild/mainpage-astonmartin.png" alt="Aston Martin">
+        </div>
+<div class="info">
+    <h3>Aston Martin DB11</h3>
+    <p class="price">2 295 000kr</p>
+</div>
+    </div>
+
+<div class="product-card">
+        <div class="image">
+            <img src="mainpage-videoochbild/mainpage-lambo.jpg" alt="Lamborghini">
+        </div>
+<div class="info">
+    <h3>Lambogirhini Hurracan</h3>
+    <p class="price">3 195 000kr</p>
+</div>
+    </div>
+
+    <div class="product-card">
+        <div class="image">
+            <img src="mainpage-videoochbild/mainpage-porsche.png" alt="Porsche">
+        </div>
+<div class="info">
+    <h3>Porsche 911</h3>
+    <p class="price">1 795 000kr</p>
+</div>
+    </div>
+    
+
+
+</div>
+
+<!-- produkttitel (nyhet)-->
+<section class="section-title2">
+<h1 class="title-lines">Nyhet</h1>
+</section>
+
+<!-- slideshow med click --> 
+
+<section class="slideshow">
+
+<input type="radio" name="slide" id="slide1" checked>
+<input type="radio" name="slide" id="slide2">
+<input type="radio" name="slide" id="slide3">
+<input type="radio" name="slide" id="slide4">
+
+<div class="slides">
+
+    <img src="mainpage-videoochbild/mainpage-slide-1.png" class="slide s1">
+    <img src="mainpage-videoochbild/mainpage-slide-2.png" class="slide s2">
+    <img src="mainpage-videoochbild/mainpage-slide-3.png" class="slide s3">
+    <img src="mainpage-videoochbild/mainpage-slide-4.png" class="slide s4">
+
+</div>
+
+<div class="arrows">
+
+    <label for="slide4" class="prev s1"> ❮ </label>
+    <label for="slide2" class="next s1"> ❯ </label>
+
+    <label for="slide1" class=" prev s2"> ❮ </label>
+    <label for="slide3" class="next s2"> ❯ </label>
+
+    <label for="slide2" class=" prev s3"> ❮ </label>
+    <label for="slide4" class="next s3"> ❯ </label>
+
+    <label for="slide3" class=" prev s4"> ❮ </label>
+    <label for="slide1" class="next s4"> ❯ </label>
+</div>
+
+</section>
+
+<!-- ================= BILSPECIFIKATIONER ================= -->
+<section class="car-specs">
+    <div class="specs-box">
+
+        <h2 class="specs-title">Lamborghini – Specifikationer</h2>
+
+        <div class="specs-grid">
+
+            <div class="spec-item">
+                <span class="label">Motor</span>
+                <span class="value">V8 Twin-Turbo</span>
+            </div>
+
+            <div class="spec-item">
+                <span class="label">Hästkrafter</span>
+                <span class="value">620 hk</span>
+            </div>
+
+            <div class="spec-item">
+                <span class="label">0–100 km/h</span>
+                <span class="value">3.4 sek</span>
+            </div>
+
+            <div class="spec-item">
+                <span class="label">Toppfart</span>
+                <span class="value">320 km/h</span>
+            </div>
+
+            <div class="spec-item">
+                <span class="label">Drivning</span>
+                <span class="value">Bakhjulsdrift</span>
+            </div>
+
+            <div class="spec-item">
+                <span class="label">Växellåda</span>
+                <span class="value">8-stegad automat</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- förbuka nu knappen -->
+<a href="01-checkout.html" class="boka-box">Förboka nu</a>
+
+</div>
+
+</section>
+
+<!-- footer -->
+<footer class="site-footer">
+        <p>2025 LUX. Alla rättigheter förbehållna.</p>
+    </footer>
+
 </body>
 </html>
