@@ -440,3 +440,101 @@ header svg {
     padding: 15px;
     line-height: 1.4;
 }
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .site-header {
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .company-name {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header svg {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .title-lines {
+        font-size: 2.2rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .title-lines::before,
+    .title-lines::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .slideshow {
+        margin: 40px 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .arrows label {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .specs-box {
+        padding: 20px;
+    }
+
+    .specs-title {
+        font-size: 1.5rem;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-badge {
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        left: 20px;
+        font-size: 0.75rem;
+    }
+}
+
