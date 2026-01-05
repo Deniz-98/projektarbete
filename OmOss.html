@@ -148,12 +148,15 @@
 
     
     <script>
-        const wrapper = document.querySelector(".timeline-wrapper");
+    const wrapper = document.querySelector(".timeline-wrapper");
 
-        wrapper.addEventListener("wheel", (e) => {
-            e.preventDefault();
-            wrapper.scrollLeft += e.deltaY;
-        }, { passive: false });
+if (window.innerWidth > 768) {
+    wrapper.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        wrapper.scrollLeft += e.deltaY;
+    }, { passive: false });
+}
+
     </script>
 
 </body>
